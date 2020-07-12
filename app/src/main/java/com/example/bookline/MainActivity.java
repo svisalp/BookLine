@@ -1,10 +1,10 @@
 package com.example.bookline;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Register(View view1){
-        Intent intent1 = new Intent(this, LoginActivity.class);
+        Intent intent1 = new Intent(this, RegisterActivity.class);
         startActivity(intent1);
     }
 
