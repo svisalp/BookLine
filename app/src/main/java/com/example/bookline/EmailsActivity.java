@@ -34,8 +34,6 @@
 
            // Create and set a layout manager
            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-           //RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
-           //RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
            recyclerView.setLayoutManager(layoutManager);
 
            loadEmails();
@@ -47,7 +45,7 @@
            showLoading(true);
 
            // Load email from the server using Volley library
-           String url = "http://10.2.7.8888/paragoniu/mails.php";
+           String url = "http://10.0.2.2/paragoniu/mails.php";
 
            // Create a request
            StringRequest request = new StringRequest(url, new Response.Listener<String>() {
@@ -67,7 +65,7 @@
                @Override
                public void onErrorResponse(VolleyError error) {
                    Toast.makeText(EmailsActivity.this, "Something error while loading data from the server", Toast.LENGTH_LONG).show();
-                   Log.d("piuecom", "Load data error: " + error.getMessage());
+                   Log.d("BookLine", "Load data error: " + error.getMessage());
                    // Hide the progress bar and show recycler view
                    showLoading(false);
                }
