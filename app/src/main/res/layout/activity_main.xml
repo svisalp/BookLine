@@ -16,13 +16,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UnknownId" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/abc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/abc"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingConstraints">-->
 
-    </androidx.recyclerview.widget.RecyclerView>
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
 
     <ImageView
         android:id="@+id/imageView4"
@@ -65,7 +65,8 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteY="20dp" >
+        tools:layout_editor_absoluteY="20dp"
+        android:orientation="horizontal">
 
 
     </LinearLayout>
