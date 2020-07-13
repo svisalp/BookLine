@@ -30,10 +30,8 @@ public class BooksActivity extends AppCompatActivity {
         loadBooks();
     }
 
-    private void loadBooks() {
-    }
 
-    private void loadbooks() {
+    private void loadBooks() {
 
         // Show loading
 //           showLoading(true);
@@ -59,15 +57,13 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(BooksActivity.this, "Something error while loading data from the server", Toast.LENGTH_LONG).show();
-                Log.d("BookLine", "Load data error: " + error.getMessage());
+                Log.d("Error", "Load data error: " + error.getMessage());
 
             }
         });
         // Add the request to the Queue
         Volley.newRequestQueue(this).add(request);
     }
-
-
         }
 
 

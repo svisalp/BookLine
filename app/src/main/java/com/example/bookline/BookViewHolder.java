@@ -18,8 +18,8 @@ public class BookViewHolder extends  RecyclerView.ViewHolder{
 
         txtEmail = itemView.findViewById(R.id.txt_email);
         txtFirst_name = itemView.findViewById(R.id.txt_firstname);
-        txtEmail = itemView.findViewById(R.id.txt_lastname);
-        txtEmail = itemView.findViewById(R.id.txt_title);
+        txtLast_name = itemView.findViewById(R.id.txt_lastname);
+        txtTitle = itemView.findViewById(R.id.txt_title);
 
 
 //
