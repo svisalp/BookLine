@@ -75,14 +75,15 @@ import com.google.gson.Gson;
 
        }
 
-//       private void showLoading(boolean state){
-//           if(state){
+//       private void showLoading(boolean state) {
+//           if (state) {
 //               recyclerView.setVisibility(View.INVISIBLE);
-////               progressBar.setVisibility(View.VISIBLE);
+//               progressBar.setVisibility(View.VISIBLE);
 //           } else {
 //               progressBar.setVisibility(View.INVISIBLE);
 //               recyclerView.setVisibility(View.VISIBLE);
 //           }
-       }
+//       }
+   }
 
 

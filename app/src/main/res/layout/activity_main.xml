@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Adapter.MainActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -63,13 +63,24 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+    <Button
+        android:id="@+id/Book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Book"
+        android:text="Book"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="100dp" />
+
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="64dp">
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="16dp">
 
 
     </LinearLayout>

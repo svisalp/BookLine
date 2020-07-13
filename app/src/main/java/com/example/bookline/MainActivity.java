@@ -1,4 +1,4 @@
-package com.example.bookline.Adapter;
+package com.example.bookline;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,10 +7,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.bookline.LoginActivity;
-import com.example.bookline.R;
-import com.example.bookline.RegisterActivity;
 
 import java.util.ArrayList;
 
@@ -52,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
     public void Register(View view1){
         Intent intent1 = new Intent(this, RegisterActivity.class);
         startActivity(intent1);
+    }
+
+
+    public void Book(View view2){
+        Intent intent2 = new Intent(this, BooksActivity.class);
+        startActivity(intent2);
     }
 
 
