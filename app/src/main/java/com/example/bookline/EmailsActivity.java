@@ -1,21 +1,20 @@
    package com.example.bookline;
 
    import android.os.Bundle;
-   import android.util.Log;
-   import android.view.View;
-   import android.widget.ProgressBar;
-   import android.widget.Toast;
+import android.util.Log;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
-   import androidx.annotation.Nullable;
-   import androidx.appcompat.app.AppCompatActivity;
-   import androidx.recyclerview.widget.LinearLayoutManager;
-   import androidx.recyclerview.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-   import com.android.volley.Response;
-   import com.android.volley.VolleyError;
-   import com.android.volley.toolbox.StringRequest;
-   import com.android.volley.toolbox.Volley;
-   import com.google.gson.Gson;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
 
    public class EmailsActivity extends AppCompatActivity {
 
@@ -29,7 +28,7 @@
            setContentView(R.layout.acitivity_emails);
 
            // Make a reference to the Views
-           progressBar = findViewById(R.id.progress_bar);
+//           progressBar = findViewById(R.id.progress_bar);
            recyclerView = findViewById(R.id.recycler_view);
 
            // Create and set a layout manager
@@ -42,10 +41,10 @@
        private void loadEmails() {
 
            // Show loading
-           showLoading(true);
+//           showLoading(true);
 
            // Load email from the server using Volley library
-           String url = "http://10.0.2.2/paragoniu/mails.php";
+           String url = "http://10.0.2.2:8888/mails.php";
 
            // Create a request
            StringRequest request = new StringRequest(url, new Response.Listener<String>() {
@@ -59,7 +58,7 @@
                    recyclerView.setAdapter(adapter);
 
                    // Hide the progress bar and show recycler view
-                   showLoading(false);
+//                   showLoading(false);
                }
            }, new Response.ErrorListener() {
                @Override
@@ -67,7 +66,7 @@
                    Toast.makeText(EmailsActivity.this, "Something error while loading data from the server", Toast.LENGTH_LONG).show();
                    Log.d("BookLine", "Load data error: " + error.getMessage());
                    // Hide the progress bar and show recycler view
-                   showLoading(false);
+//                   showLoading(false);
                }
            });
 
@@ -76,14 +75,14 @@
 
        }
 
-       private void showLoading(boolean state){
-           if(state){
-               recyclerView.setVisibility(View.INVISIBLE);
-               progressBar.setVisibility(View.VISIBLE);
-           } else {
-               progressBar.setVisibility(View.INVISIBLE);
-               recyclerView.setVisibility(View.VISIBLE);
-           }
+//       private void showLoading(boolean state){
+//           if(state){
+//               recyclerView.setVisibility(View.INVISIBLE);
+////               progressBar.setVisibility(View.VISIBLE);
+//           } else {
+//               progressBar.setVisibility(View.INVISIBLE);
+//               recyclerView.setVisibility(View.VISIBLE);
+//           }
        }
 
-   }
+

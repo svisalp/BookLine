@@ -50,6 +50,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.MyViewHolder
     @Override
     public int getItemCount() {
         return titleList.size();
+
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -57,6 +58,7 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.MyViewHolder
         public  MyViewHolder(View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
+
         }
     }
 }
