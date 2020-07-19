@@ -1,10 +1,10 @@
 package com.example.bookline;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void Menu(View view2){
-        Intent intent2 = new Intent(this, MenuActivity.class);
+        Intent intent2 = new Intent(this, BooksActivity.class);
         startActivity(intent2);
     }
     public void Login(View view3){

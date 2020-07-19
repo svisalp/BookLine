@@ -1,5 +1,5 @@
-package com.example.bookline;
 
+package com.example.bookline;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,10 +8,17 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 public class BooksAdapter extends RecyclerView.Adapter<BookViewHolder> {
+
 
     // Dataset
     private Book[] books;
+//    private onBookListener onBookListener;
+//    public BooksAdapter(Book [] books, onBookListener onBookListener){
+//        this.books=books;
+//        this.onBookListener = onBookListener;
+//    }
 
     public BooksAdapter(Book[] books) {
         this.books = books;
@@ -38,4 +45,12 @@ public class BooksAdapter extends RecyclerView.Adapter<BookViewHolder> {
     public int getItemCount() {
         return books.length;
     }
+
+
+    public interface OnBookListener{
+        void onBookClick(int position);
+    }
+
+
+
 }
